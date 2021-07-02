@@ -58,13 +58,10 @@ img {
 .main {
     display: flex;
 }
-/* .news { */
-    /* display: flex; */
-/* } */
 .news-fraction {
     display: flex;
-    /* flex-direction: column; */
     margin-bottom: 24px;
+
 }
 .news-content {
     max-width: 288px;
@@ -81,12 +78,11 @@ img {
 }
 .footer {
     height: 120px;
-    text-align: center; 
+    text-align: center;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    /* border: 1px solid #000; */
 }
 .footer p {
     font-size: 16px;
