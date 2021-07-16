@@ -51,14 +51,17 @@ img {
     height: auto;
 }
 /* Reset end */
-.mb-56 {
-    margin-bottom: 56px;
+.mb-16 {
+    margin-bottom: 16px;
 }
 .mb-32 {
     margin-bottom: 32px;
 }
 .mb-40 {
     margin-bottom: 40px;
+}
+.mb-56 {
+    margin-bottom: 56px;
 }
 body {
     font-family: "Roboto";
@@ -68,8 +71,16 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+.background-white {
+    background: #fff;
+    color: #000;
+}
+.background-black {
+    background: #000;
+    color: #fff;
+}
 /* Banner */
-.background {
+.banner {
     background-image: url(/images/banner.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -133,4 +144,65 @@ body {
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
     font-size: 50px;
+}
+/* Brand */
+.brand {
+    text-align: center;
+    margin-top: 56px;
+    padding-top: 56px;
+
+}
+.brand h2 {
+    font-size: 64px;
+    margin-bottom: 12px;
+}
+.brand h3 {
+    font-size: 24px;
+}
+.brand p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 68px;
+}
+.brand__columns {
+    display: flex;
+    justify-content: space-between;
+}
+/* other */
+.other {
+    text-align: center;
+    padding-top: 56px;
+}
+.other h2 {
+    font-size: 64px;
+}
+.other p {
+    font-size: 20px;
+}
+.other__columns {
+    display: flex;
+    justify-content: space-between;
+}
+.other__columns img {
+    margin-bottom: 16px;
+}
+.other__columns p {
+    margin-bottom: 48px;
+}
+/* footer */
+.footer {
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-top: 96px;
+}
+.footer h2 {
+    font-size: 64px;
+}
+.footer p {
+    font-size: 24px;
+}
+.footer a {
+    text-decoration: none;
+    color: #fff;
 }
