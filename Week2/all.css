@@ -60,6 +60,10 @@ img {
 .mb-40 {
     margin-bottom: 40px;
 }
+body {
+    font-family: "Roboto";
+    font-style: italic;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -76,8 +80,6 @@ img {
 .resume {
     position: absolute;
     color: #fff;
-    font-family: "Roboto";
-    font-style: italic;
     font-weight: bold;
     /* max-width: 304px; */
     margin-top: 308px;
@@ -103,5 +105,32 @@ img {
 }
 /* About */
 .about {
-    
+    /* 要使用 margin: 0 auto 記得設定寬度 */
+    width: 384px;
+    text-align: center;
+}
+.about h2 {
+    font-size: 64px;
+}
+.about p {
+    font-size: 24px;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+.about__divider {
+    border-bottom: 1px solid #000;
+    padding-bottom: 24px;
+    margin-bottom: 28px;
+}
+.about li {
+    line-height: 42px;
+}
+.about ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #891818; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    font-size: 50px;
 }
