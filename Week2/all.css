@@ -1,0 +1,107 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Reset end */
+.mb-56 {
+    margin-bottom: 56px;
+}
+.mb-32 {
+    margin-bottom: 32px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Banner */
+.background {
+    background-image: url(/images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center;
+    height: calc(100vh);
+    position: relative;
+}
+.resume {
+    position: absolute;
+    color: #fff;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: bold;
+    /* max-width: 304px; */
+    margin-top: 308px;
+    margin-bottom: 308px;
+    right: 40%;
+}
+.resume p {
+    font-size: 24px;
+    line-height: 36px;
+}
+.resume h1 {
+    font-size: 80px;
+}
+/* 需要設定 margin-right: 16px 嗎？還是可以直接 justify-content: space-between 讓他平均分配寬度 */
+.resume img {
+    display: block;
+    /* margin-right: 16px; */
+}
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+/* About */
+.about {
+    
+}
