@@ -133,3 +133,111 @@ img {
     }
 }
 /* Banner */
+/* Classic */
+/* Association */
+/* Suggestions */
+/* Contact */
+/* Footer */
+.footer {
+    color: #fff;
+    text-align: center;
+}
+.nav-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+}
+.nav-footer .nav-menu {
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+}
+.nav-footer .nav-menu li {
+    margin-right: 48px;
+}
+.nav-icon {
+    display: flex;
+}
+.nav-icon li {
+    margin-right: 32px;
+}
+.nav-icon li:last-child {
+    margin-right: 0;
+}
+.nav-methods-phone .nav-icon {
+    display: none;
+}
+.nav-methods {
+    display: flex;
+    margin-bottom: 16px;
+}
+/* 文字與 icon 無法對齊在同一條水平線，該如何解決？  */
+/* icon 的大小不同時，右邊的文字又要等距，請問 該如何解決？ */
+.nav-methods a {
+    margin-right: 20px;
+}
+.nav-methods p {
+    font-size: 36px;
+    line-height: 54px;
+    /* vertical-align: middle; */
+}
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 39px;
+    border-top: 1px solid #fff;
+    padding-top: 23px;
+}
+.copyright__others {
+    display: flex;
+}
+.copyright__others li {
+    margin-right: 48px;
+}
+/* 設計稿上的這個區域的 li 都是 margin-right: 48px， 但最後一個 list 希望 margin 等於 0。有更好的做法嗎？（還是只能使用 .copyright__others li:last-child { margin-right: 0; } ?） */
+.copyright__others li:last-child {
+    margin-right: 0;
+}
+@media(max-width: 922px){
+    .container {
+        padding-right: 48px;
+        padding-left: 48px;
+    }
+}
+@media(max-width: 767px){
+    .footer {
+        padding-top: 25px;
+    }
+    .nav-footer .nav-menu {
+        display: none;
+    }
+    .nav-footer .nav-icon {
+        display: none;
+    }
+    .nav-methods-phone {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* 拉到 500px 螢幕解析度的時候，icon 會消失，要如何解決？ */
+    .nav-methods-phone .nav-icon {
+        /* visibility: visible; */
+        display: flex;
+    }
+    .copyright {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .copyright p {
+        margin-bottom: 8px;
+    }
+    .copyright__others {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .copyright__others li {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+}
