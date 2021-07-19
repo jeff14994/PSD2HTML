@@ -55,3 +55,81 @@ img {
     height: auto;
 }
 /* Reset end */
+@import url("https://fonts.google.com/specimen/Roboto?query=roboto");
+@import url("https://fonts.google.com/specimen/Noto+Sans?query=san");
+.container {
+    max-width: 1080px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+.container__header {
+    padding-right: 88px;
+    padding-left: 88px;
+}
+/* Header */
+.bg-red {
+    background: #AA0601;
+}
+.header {
+    display: flex;
+    /* jc:sd */
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header img {
+    display: block;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav li {
+    margin-right: 64px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "思源黑體 TW", Regular;
+}
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav li:nth-last-child(1) {
+    margin-right: 0;
+}
+@media(max-width: 922px){
+    .container__header {
+        padding-right: 39px;
+        padding-left: 39px;
+    }
+}
+@media(max-width: 767px){
+    .container__header {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .header {
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+    .header img {
+        padding-bottom: 10px;
+    }
+    .nav {
+        width: 100%;
+        justify-content: space-between;
+
+    }
+    .nav li {
+        width: 50%;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        text-align: center;
+    }
+}
+/* Banner */
