@@ -169,13 +169,17 @@ img {
     display: none;
 }
 .nav-methods {
+    width: 100%;
     display: flex;
     margin-bottom: 16px;
+    align-items: center;
 }
 /* 文字與 icon 無法對齊在同一條水平線，該如何解決？  */
 /* icon 的大小不同時，右邊的文字又要等距，請問 該如何解決？ */
 .nav-methods a {
+    width: 100%;
     margin-right: 20px;
+    width: 36px;
 }
 .nav-methods p {
     font-size: 36px;
@@ -216,14 +220,22 @@ img {
         display: none;
     }
     .nav-methods-phone {
+        max-width: 100%;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     /* 拉到 500px 螢幕解析度的時候，icon 會消失，要如何解決？ */
     .nav-methods-phone .nav-icon {
         /* visibility: visible; */
         display: flex;
+        width: 100%;
     }
+    .nav-methods p {
+        /* width: 100%; */
+        word-break: break-all;
+    }
+    
     .copyright {
         flex-direction: column;
         align-items: flex-start;
